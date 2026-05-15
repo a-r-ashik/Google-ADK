@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Test artifacts
+.pytest_cache/
+.coverage
+
+# Instance-specific files (e.g., Flask)
+instance/
+
+# Auto-generated files
+*.adk
+
