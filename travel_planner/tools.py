@@ -41,7 +41,7 @@ def find_nearby_places_open(query: str, location: str, radius: int = 3000, limit
     """
 
     try:
-        # Step 1: Geocode the location to get coordinates
+       
         geolocator = Nominatim(user_agent="open_place_finder")
         loc = geolocator.geocode(location)
         if not loc:
@@ -49,7 +49,7 @@ def find_nearby_places_open(query: str, location: str, radius: int = 3000, limit
 
         lat, lon = loc.latitude, loc.longitude
 
-        # Step 2: Query Overpass API for matching places
+        
         overpass_url = "https://overpass-api.de/api/interpreter"
         overpass_query = f"""
         [out:json][timeout:25];
@@ -70,7 +70,7 @@ def find_nearby_places_open(query: str, location: str, radius: int = 3000, limit
         if not elements:
             return f"No results found for '{query}' near {location}."
 
-        # Step 3: Format results
+        
         output = [f"Top results for '{query}' near {location}:"]
         for el in elements[:limit]:
             name = el.get("tags", {}).get("name", "Unnamed place")
