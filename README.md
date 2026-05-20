@@ -1,4 +1,4 @@
-# ✈️ Travel Planner — Multi-Agent AI Application
+#  Travel Planner — Multi-Agent AI Application
 
 > **A production-grade multi-agent travel planning system built with [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/) and Gemini.**  
 > Orchestrates specialized AI sub-agents to deliver destination inspiration, real-time news, and nearby place discovery — all in one seamless conversation.
